@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "8e8cb85f-0a1c-4b01-b64f-991868ee36a9",
+		"name": "Inventory Management System API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41100674"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpbnZlbnRvcnlfc3lzdGVtIiwiYXVkIjoiYXBpX3VzZXJzIiwiaWF0IjoxNzM2OTkwNzcyLCJleHAiOjE3MzY5OTQzNzIsImRhdGEiOnsidXNlcl9pZCI6IjE0IiwidXNlcm5hbWUiOiJUZXN0MTIzIiwicm9sZSI6InVzZXIifX0.TFeosiQqVukLVWNgsqP3pXVnUeEVCymSZ90CngBdLM8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpbnZlbnRvcnlfc3lzdGVtIiwiYXVkIjoiYXBpX3VzZXJzIiwiaWF0IjoxNzM3MDY5ODA3LCJleHAiOjE3MzcwNzM0MDcsImRhdGEiOnsidXNlcl9pZCI6IjE0IiwidXNlcm5hbWUiOiJUZXN0MTIzIiwicm9sZSI6InVzZXIifX0.Yi_4Mgy8AMoQpiL1DFVqCM2U95dtJFtqu9AttsK6OC4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product_ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJpbnZlbnRvcnlfc3lzdGVtIiwiYXVkIjoiYXBpX3VzZXJzIiwiaWF0IjoxNzM3MDY5ODA3LCJleHAiOjE3MzcwNzM0MDcsImRhdGEiOnsidXNlcl9pZCI6IjE0IiwidXNlcm5hbWUiOiJUZXN0MTIzIiwicm9sZSI6InVzZXIifX0.Yi_4Mgy8AMoQpiL1DFVqCM2U95dtJFtqu9AttsK6OC4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CSV_inport",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CSV_export",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
