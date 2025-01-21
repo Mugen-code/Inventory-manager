@@ -30,6 +30,7 @@ git clone https://github.com/Mugen-code/Inventory-manager.git
 
 1. Create a `.env` file in the root directory
 2. Add these configuration settings to your `.env`:
+```
 CI_ENVIRONMENT = development
 APP
 app.baseURL = 'http://localhost:8080'
@@ -45,5 +46,6 @@ JWT
 JWT_SECRET = '3d7c6f59a8b4e2d1c9f0a5b8e4d2c1f9a8b4e2d1c9f0a5b8e4d2c1f9a8b4e2d1'
 SESSION
 session.savePath = writable/sessions
-3. Make sure the database settings match your local MySQL configuration
-4. The JWT_SECRET is required for API authentication
+```
+4. Make sure the database settings match your local MySQL configuration
+5. The JWT_SECRET is required for API authentication
