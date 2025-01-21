@@ -19,7 +19,7 @@ A comprehensive inventory management system built with CodeIgniter 4.
 1. Clone the repository
 ```bash
 git clone https://github.com/Mugen-code/Inventory-manager.git
-
+```
 2. Configure your database settings in either:
    - `.env` file (recommended)
    - or `app/Config/Database.php`
