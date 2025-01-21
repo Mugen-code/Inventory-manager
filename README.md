@@ -59,5 +59,9 @@ session.savePath = writable/sessions
 ```
 3. Make sure the database settings match your local MySQL configuration
 4. The JWT_SECRET is required for API authentication
+   
+Default Login Credentials:
+- Username: Test123
+- Password: Test123
 ```markdown
 Note: Make sure to create a database named 'inventory_manager' in MySQL before importing the SQL file.
