@@ -33,8 +33,10 @@ git clone https://github.com/Mugen-code/Inventory-manager.git
 ```
 #ENVIROMENT
 CI_ENVIRONMENT = development
+
 #APP
 app.baseURL = 'http://localhost:8080'
+
 #DATABASE
 database.default.hostname = localhost
 database.default.database = inventory_manager
@@ -43,8 +45,10 @@ database.default.password =
 database.default.DBDriver = MySQLi
 database.default.DBPrefix =
 database.default.port = 3306
+
 #JWT
 JWT_SECRET = '3d7c6f59a8b4e2d1c9f0a5b8e4d2c1f9a8b4e2d1c9f0a5b8e4d2c1f9a8b4e2d1'
+
 #SESSION
 session.savePath = writable/sessions
 ```
