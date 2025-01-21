@@ -31,10 +31,11 @@ git clone https://github.com/Mugen-code/Inventory-manager.git
 1. Create a `.env` file in the root directory
 2. Add these configuration settings to your `.env`:
 ```
+#ENVIROMENT
 CI_ENVIRONMENT = development
-APP
+#APP
 app.baseURL = 'http://localhost:8080'
-DATABASE
+#DATABASE
 database.default.hostname = localhost
 database.default.database = inventory_manager
 database.default.username = root
@@ -42,9 +43,9 @@ database.default.password =
 database.default.DBDriver = MySQLi
 database.default.DBPrefix =
 database.default.port = 3306
-JWT
+#JWT
 JWT_SECRET = '3d7c6f59a8b4e2d1c9f0a5b8e4d2c1f9a8b4e2d1c9f0a5b8e4d2c1f9a8b4e2d1'
-SESSION
+#SESSION
 session.savePath = writable/sessions
 ```
 4. Make sure the database settings match your local MySQL configuration
