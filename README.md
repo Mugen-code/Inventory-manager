@@ -16,15 +16,20 @@ A comprehensive inventory management system built with CodeIgniter 4.
 
 ## Installation
 
-1. Clone the repository
+1. Clone the repository into your xampp/htdocs folder:
 ```bash
 git clone https://github.com/Mugen-code/Inventory-manager.git
 ```
-2. Configure your database settings in either:
+2. Navigate to the project directory and install dependencies:
+```
+cd inventory_manager
+composer install
+```
+3. Configure your database settings in either:
    - `.env` file (recommended)
    - or `app/Config/Database.php`
-3. Import the database from `sql/database.sql`
-4. Access the site through: http://localhost/inventory_manager/public/
+4. Import the database from `sql/database.sql`
+5. Access the site through: http://localhost/inventory_manager/public/
 
 ## Environment Setup
 
@@ -52,5 +57,7 @@ JWT_SECRET = '3d7c6f59a8b4e2d1c9f0a5b8e4d2c1f9a8b4e2d1c9f0a5b8e4d2c1f9a8b4e2d1'
 #SESSION
 session.savePath = writable/sessions
 ```
-4. Make sure the database settings match your local MySQL configuration
-5. The JWT_SECRET is required for API authentication
+3. Make sure the database settings match your local MySQL configuration
+4. The JWT_SECRET is required for API authentication
+```markdown
+Note: Make sure to create a database named 'inventory_manager' in MySQL before importing the SQL file.
