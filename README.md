@@ -29,7 +29,7 @@ composer install
    - `.env` file (recommended)
    - or `app/Config/Database.php`
 4. Import the database from `sql/database.sql`
-5. Access the site through: http://localhost/inventory_manager/public/
+5. Access the site through: http://localhost/inventory_manager
 
 ## Environment Setup
 
